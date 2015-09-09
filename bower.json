@@ -1,0 +1,24 @@
+{
+  "name": "383-project-test",
+  "version": "1.0.0",
+  "authors": [
+    "mdouglasbrett <mdouglasbrett@icloud.com>"
+  ],
+  "description": "Front end test piece for 383 Project",
+  "license": "MIT",
+  "homepage": "mdouglasbrett.com",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "basscss-sass": "~2.0.0",
+    "imagesloaded": "~3.1.8",
+    "masonry": "~3.3.1",
+    "isotope": "~2.2.1"
+  },
+  "devDependencies": {}
+}

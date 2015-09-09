@@ -1,0 +1,110 @@
+
+$breakpoint-sm: '(min-width: 40em)' !default;
+$breakpoint-md: '(min-width: 52em)' !default;
+$breakpoint-lg: '(min-width: 64em)' !default;
+
+@import 'shadow-mixin';
+
+
+body {
+	font-family: 'Roboto', sans-serif;
+}
+
+h1 {
+	font-family: 'Roboto', sans-serif;
+}
+
+.shadow {
+	@include shadow(2);
+}
+
+.site-wrap {
+	width: 100%;
+	min-height: 100vh;
+}
+
+.container {
+  max-width: 100em; //$container-width;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#loading-spinner {
+	min-height: 200px;
+	width: 100%;
+	padding-top: 100px;
+	padding-bottom: 100px;
+	display: table;
+	text-align: center;
+}
+
+.twitter {
+  .hashtag {
+    color: #0074d9;
+  }
+}
+
+.instagram {
+	.instagram-avatar {
+	  width: 50px;
+	  height: auto;
+	  border-radius: 100%;
+	}
+	.user {
+	  margin-bottom: 0;
+	}
+	.hashtag {
+	  color: #001f3f;
+	}
+}
+
+.refresh-button {
+	float: left;
+}
+
+@media #{$breakpoint-sm} {
+	.refresh-button {
+		float: left;
+	}
+}
+
+@media #{$breakpoint-md} {
+	.refresh-button {
+		float: left;
+	}
+}
+
+@media #{$breakpoint-lg} {
+	.refresh-button {
+		float: right;
+	}
+}
+
+
+// Isotope Items
+
+.content-item {
+  width: 100%;
+}
+
+
+@media #{$breakpoint-sm} {
+
+  .content-item {
+    width: 100%;
+  }
+}
+
+
+@media #{$breakpoint-md} {
+
+  .content-item {
+    width: 50%;
+  }
+}
+
+@media #{$breakpoint-lg} {
+  .content-item {
+    width: 33%;
+  }
+}

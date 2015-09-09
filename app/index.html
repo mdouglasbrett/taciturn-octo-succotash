@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="description" content="Front-end test for 383 Project">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>383-Project | Front-end Test</title>
+	<link rel="stylesheet" href="styles/style.css"/>
+	<link href='http://fonts.googleapis.com/css?family=Roboto:400,700,300,100,400italic' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+</head>
+<body>
+	<div class="site-wrap">
+	<div class="container">
+	<div class="black bg-white border-bottom px2">
+    <h1 class="h1 h1-responsive">383 Project | Front-end Test</h1>
+</div>
+	<div class="clearfix border-bottom py2 mb2">
+		<div class="selector-row left px2">
+		<button class="selecta" data-filter=".manual"><i class="fa fa-newspaper-o fa-2x"></i></button>
+		<button class="selecta" data-filter=".instagram"><i class="fa fa-instagram fa-2x"></i></button>
+		<button class="selecta" data-filter=".twitter"><i class="fa fa-twitter fa-2x"></i></button>
+		<button class="selecta" data-filter=".all"><i class="fa fa-globe fa-2x"></i></button>
+		</div>
+			<div class="refresh-button px2">
+			<button id="refreshContent"><i class="fa fa-refresh fa-2x"></i></button>
+			</div>
+	</div>
+	</div>
+<div class="container">
+	<div id="loading-spinner" class="hide">
+		<i class="fa fa-circle-o-notch fa-5x fa-spin"></i>
+	</div>
+<div id="filterable-content">
+</div>
+</div>
+</div>
+<!--build:js scripts/main.min.js -->
+<script src="styles/components/imagesloaded/imagesloaded.pkgd.min.js"></script>
+<script src="styles/components/isotope/dist/isotope.pkgd.min.js"></script>
+<script src="scripts/main.js"></script>
+<!-- endbuild -->
+</body>
+</html>
