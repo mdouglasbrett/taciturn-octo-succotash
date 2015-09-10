@@ -23,7 +23,7 @@
         return newString;
     }
 
-    //searches for and replaces hashtags in body copy
+    //searches for and replaces mentions in body copy
     function mentionMatcher(string) {
         var hashRegEx = /((@)([A-Za-z0-9\_\.\-]+))/g;
         var newString = string.replace(hashRegEx, '<a href="http://twitter.com/$3" target="_blank">$1</a>');
